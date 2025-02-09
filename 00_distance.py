@@ -15,7 +15,6 @@ sites = {
 distances = {}
 
 # TODO здесь заполнение словаря
-print('moscow')
 print(distances)
 
 
