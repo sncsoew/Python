@@ -11,7 +11,7 @@ distances = {'Moscow':{'London':(((sites['Moscow'][0] - sites['London'][0]) ** 2
                        'Moscow':(((sites['London'][0] - sites['Moscow'][0]) ** 2 + (sites['London'][1] - sites['Moscow'][1]) ** 2) ** 0.5)}
              }
 ```
-![Результат](C:\Users\Егор\Desktop\Screenshot_1.png)
+
 ## Задание 2
 Найти площадь круга и вывести\
 Решение:
