@@ -1,7 +1,7 @@
 # Python
-##Задание 1  
-Составить словарь словарей расстояний между городами 
-Решение:
+##Задание 1\ 
+Составить словарь словарей расстояний между городами\
+Решение:\
 ```python
 distances = {'Moscow':{'London':(((sites['Moscow'][0] - sites['London'][0]) ** 2 + (sites['Moscow'][1] - sites['London'][1]) ** 2) ** 0.5),
                        'Paris':(((sites['Moscow'][0] - sites['Paris'][0]) ** 2 + (sites['Moscow'][1] - sites['Paris'][1]) ** 2) ** 0.5)},
