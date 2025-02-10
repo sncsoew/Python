@@ -1,5 +1,5 @@
 # Python
-Задание 1  
+##Задание 1  
 Составить словарь словарей расстояний между городами 
 Решение:
 distances = {'Moscow':{'London':(((sites['Moscow'][0] - sites['London'][0]) ** 2 + (sites['Moscow'][1] - sites['London'][1]) ** 2) ** 0.5),
@@ -9,7 +9,7 @@ distances = {'Moscow':{'London':(((sites['Moscow'][0] - sites['London'][0]) ** 2
              'London':{'Paris':(((sites['London'][0] - sites['Paris'][0]) ** 2 + (sites['London'][1] - sites['Paris'][1]) ** 2) ** 0.5),
                        'Moscow':(((sites['London'][0] - sites['Moscow'][0]) ** 2 + (sites['London'][1] - sites['Moscow'][1]) ** 2) ** 0.5)}
              }
-Задание 2
+##Задание 2
 Найти площадь круга и вывести
 Решение:
 print(round(3.1415926*radius**2,4))
