@@ -56,6 +56,37 @@ print('Рост отца -',my_family_height[1][1],'см')
 print('Общий рост моей семьи -',my_family_height[0][1]+my_family_height[1][1]+my_family_height[2][1],'см')
 ```
 ## Задание 6
+Есть список животных в зоопарке
+```python
+zoo = ['lion', 'kangaroo', 'elephant', 'monkey', ]
+```
+Посадить медведя (bear) между львом и кенгуру и вывести список на консоль\
+Решение:
+```python
+zoo.insert(1,'bear')
+print(zoo)
+```
+Добавить птиц из списка birds в последние клетки зоопарка
+```python
+birds = ['rooster', 'ostrich', 'lark', ]
+```
+Решение:
+```python
+zoo.extend(birds)
+print(zoo)
+```
+Убрать слона вывести список на консоль\
+Решение:
+```python
+zoo.remove('elephant')
+print(zoo)
+```
+Вывести на консоль в какой клетке сидит лев (lion) и жаворонок (lark).\
+Решение:
+```python
+print(zoo.index('lion')+1,zoo.index('lark')+1)
+```
+## Задание 7
 Есть список песен группы Depeche Mode со временем звучания с точностью до долей минут
 ```python
 violator_songs_list = [
@@ -96,3 +127,13 @@ violator_songs_dict = {
 time_2=violator_songs_dict['Sweetest Perfection']+violator_songs_dict['Policy of Truth']+violator_songs_dict['Blue Dress']
 print('А другие три песни звучат',round(time_2),'минут')
 ```
+## Задание 8
+
+
+
+
+
+
+
+
+
