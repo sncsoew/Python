@@ -1,1 +1,1 @@
-from 00_distance
+print('Hello world')

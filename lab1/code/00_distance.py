@@ -19,7 +19,7 @@ def task_0():
                         'Moscow':(((sites['London'][0] - sites['Moscow'][0]) ** 2 + (sites['London'][1] - sites['Moscow'][1]) ** 2) ** 0.5)}
                 }
     # TODO здесь заполнение словаря
-    return(distances)
+    return distances
 
 
 
