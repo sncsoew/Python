@@ -70,4 +70,4 @@ git push - Команда Git push позволяет отправлять ло�
 ---
 [1.Справка по markdown](https://doka.guide/tools/markdown)\
 [2.Официальный Python tutorial](https://docs.python.org/3/tutorial)\
-[3.Git - Основные команды](https://git-scm.com/book/ru/v2)\
+[3.Git - Основные команды](https://git-scm.com/book/ru/v2)
