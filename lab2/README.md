@@ -16,8 +16,8 @@
 ## Результат
 ![](image.png)
 ## Список используемых источников
-1.\
-2.\
-3.
+1.[Itertools в Python - Хабр](https://habr.com/ru/companies/otus/articles/529356)
+2.[itertools — Functions creating iterators for efficient looping](https://docs.python.org/3/library/itertools.html)
+3.[Итерируем правильно: 20 приемов использования в Python модуля itertools](https://proglib.io/p/iteriruemsya-pravilno-20-priemov-ispolzovaniya-v-python-modulya-itertools-2020-01-03)
 
 
