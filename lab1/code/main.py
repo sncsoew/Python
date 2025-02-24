@@ -7,30 +7,35 @@ from zoo_5 import task_5
 from songs_list_06 import task_6
 from secret_07 import task_7
 from garden_08 import task_8
-from store_10 import task_10_1, task_10_2
+from shopping_09 import task_9
+from store_10 import task_10
 
 def main():
-    num_0=task_0()
-    num_1=task_1()
-    num_2=task_2()
-    num_3=task_3()
-    num_4=task_4()
-    num_5=task_5()
-    num_6=task_6()
-    num_7=task_7()
-    num_8=task_8()
-    num_10_1=task_10_1()
-    num_10_2=task_10_2()
-    print('Задание 0:',num_0)
-    print('Задание 1:',num_1)
-    print('Задание 2:',num_2)
-    print('Задание 3:',num_3)
-    print('Задание 4:',num_4)
-    print('Задание 5:',num_5)
-    print('Задание 6:',num_6)
-    print('Задание 7:',num_7)
-    print('Задание 8:',num_8)
-    print('Задание 10:',num_10_1)
-    print('Задание 10:',num_10_2)
+    print('Задание 0:')
+    for n,h in task_0().items():
+        print(f"\t{n} {h}")
+    print('Задание 1:',task_1())
+    print('Задание 2:',task_2())
+    print('Задание 3:')
+    for i in task_3():
+        print(f"\t{i}")
+    print('Задание 4:',task_4())
+    print('Задание 5:')
+    for n,h in task_5().items():
+        print(f"\t{n}): {h}")
+    print('Задание 6:',task_6())
+    print('Задание 7:',task_7())
+    print('Задание 8:')
+    for n,h in task_8().items():
+        print(f"\t{n} {h}")
+    print('Задание 9:')
+    for n,h in task_9().items():
+        print(f"\t{n}:")
+        for f in h:
+            for e,r in f.items():
+                print(f"\t\t {r}")
+    print('Задание 10:')
+    for n,h in task_10().items():
+        print(f"\t{n} {h}")
 if __name__ == "__main__":
     main()

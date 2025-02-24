@@ -67,21 +67,18 @@ table_quantity=store[goods['Стол']][0]['quantity']+store[goods['Стол']][
 sofa_quantity=store[goods['Диван']][0]['quantity']+store[goods['Диван']][1]['quantity']
 chair_quantity=store[goods['Стул']][0]['quantity']+store[goods['Стул']][1]['quantity']+store[goods['Стул']][2]['quantity']
 
-def task_10_1():
-    ##print('цена лампы:',store[goods['Лампа']][0]['price'])
-    ##print('цена стола:',store[goods['Стол']][0]['price'],',',store[goods['Стол']][1]['price'])
-    ##print('цена дивана:',store[goods['Диван']][0]['price'],',',store[goods['Диван']][1]['price'])
-    ##print('цена стула:',store[goods['Стул']][0]['price'],',',store[goods['Стул']][1]['price'],',',store[goods['Стул']][2]['price'])
-    return [f"цена лампы: {store[goods['Лампа']][0]['price']}",
-            f"цена стола: {store[goods['Стол']][0]['price']}, {store[goods['Стол']][1]['price']}",
-            f"цена дивана: {store[goods['Диван']][0]['price']}, {store[goods['Диван']][1]['price']}",
-            f"цена стула: {store[goods['Стул']][0]['price']}, {store[goods['Стул']][1]['price']}, {store[goods['Стул']][2]['price']}"]
-def task_10_2():
+def task_10():
     ##print('лампа -',lamps_quantity,'шт,','стоимость', lamps_cost,'руб')
     ##print('стол -',table_quantity,'шт,','стоимость', table_cost,'руб')
     ##print('диван -',sofa_quantity,'шт,','стоимость', sofa_cost,'руб')
     ##print('стул -',chair_quantity,'шт,','стоимость', chair_cost,'руб')
-    return [f"лампа - {lamps_quantity} шт,стоимость {lamps_cost} руб",
-            f"стол - {table_quantity} шт,стоимость {table_cost} руб",
-            f"диван - {sofa_quantity} шт,стоимость {sofa_cost} руб",
-            f"стул - {chair_quantity} шт,стоимость {chair_cost} руб"]
+    ##print('цена лампы:',store[goods['Лампа']][0]['price'])
+    ##print('цена стола:',store[goods['Стол']][0]['price'],',',store[goods['Стол']][1]['price'])
+    ##print('цена дивана:',store[goods['Диван']][0]['price'],',',store[goods['Диван']][1]['price'])
+    ##print('цена стула:',store[goods['Стул']][0]['price'],',',store[goods['Стул']][1]['price'],',',store[goods['Стул']][2]['price'])
+    dict={}
+    dict['лампа']=f"{lamps_quantity} шт ,стоимость {lamps_cost} руб"
+    dict['стол']=f"{table_quantity} шт,стоимость {table_cost} руб"
+    dict['диван']=f"{sofa_quantity} шт,стоимость {sofa_cost} руб"
+    dict['стул']=f"{chair_quantity} шт,стоимость {chair_cost} руб"
+    return (dict)
