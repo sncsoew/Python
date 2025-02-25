@@ -21,4 +21,4 @@ def task_4():
     # Выведите на консоль общий рост вашей семьи как сумму ростов всех членов
     #   Общий рост моей семьи - ХХ см
     ## print('Общий рост моей семьи -',my_family_height[0][1]+my_family_height[1][1]+my_family_height[2][1],'см')
-    return ['Рост отца -',my_family_height[1][1],'см', 'Общий рост моей семьи -',my_family_height[0][1]+my_family_height[1][1]+my_family_height[2][1],'см']
+    return (f"Рост отца -{my_family_height[1][1]} см, Общий рост моей семьи -{my_family_height[0][1]+my_family_height[1][1]+my_family_height[2][1]}см")
