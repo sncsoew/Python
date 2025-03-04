@@ -7,20 +7,19 @@ def to_str(nested_list):
         else:
             result.append(str(element))
     return ' -> '.join(reversed(result)) + ' -> None'
-
+    
 def to_str_req(nested_list):
-    def flatten(lst):
-        if not lst:
+    def flatten(nested_list):
+        if not nested_list:
             return []
         else:
-            first = lst[0]
-            rest = lst[1:]
+            first = nested_list[0]
+            rest = nested_list[1:]
             if isinstance(first,list):
                 return flatten(first)+flatten(rest)
             else:
                 return [first]+ flatten(rest)
-    flattened = flatten(nested_list)
-    return ' -> '.join(map(str,flattened))+ ' -> None'
+    return ' -> '.join(map(str,flatten(nested_list)))+ ' -> None'
 
 
 
