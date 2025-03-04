@@ -1,4 +1,3 @@
-
 def to_str(nested_list):
     result = []
     while nested_list:
@@ -9,10 +8,37 @@ def to_str(nested_list):
             result.append(str(element))
     return ' -> '.join(reversed(result)) + ' -> None'
 
+def to_str_req(nested_list):
+    def flatten(lst):
+        if not lst:
+            return []
+        else:
+            first = lst[0]
+            rest = lst[1:]
+            if isinstance(first,list):
+                return flatten(first)+flatten(rest)
+            else:
+                return [first]+ flatten(rest)
+    flattened = flatten(nested_list)
+    return ' -> '.join(map(str,flattened))+ ' -> None'
+
+
+
 def calculate_sequence(n):
     if n == 0 or n == 1:
         return 1
     return calculate_sequence(n - 2) + (calculate_sequence(n - 1) / (2 ** (n - 1)))
+
+def calc(n):
+    if n == 0 or n == 1:
+        return 1
+    a1=1
+    a2=1
+    for i in range(2,n+1):
+        current=a1+(a2/(2**(i-1)))
+        a1=a2
+        a2=current
+    return a2
 
 
 if __name__ == "__main__":
